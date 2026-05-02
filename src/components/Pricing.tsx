@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Check, Zap } from "lucide-react";
+import LightningEffect from "./LightningEffect";
 
 const plans = [
   {
@@ -115,44 +116,11 @@ export default function Pricing() {
               } p-8 overflow-hidden transition-all duration-500 hover:-translate-y-2`}
             >
               {/* God plan — Olympus & Lightning effects */}
-              {plan.highlight && (
-                <div className="absolute inset-0 rounded-2xl pointer-events-none overflow-hidden">
-                  {/* Base Olympus Glow */}
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(201,168,76,0.15),transparent_70%)]" />
-                  
-                  {/* Lightning Streaks */}
-                  <div className="absolute inset-0">
-                    <div 
-                      className="absolute top-[-100%] left-[20%] w-[2px] h-[300%] bg-white/20 rotate-[25deg] blur-[2px]"
-                      style={{ animation: "lightning-streak 4s linear infinite" }}
-                    />
-                    <div 
-                      className="absolute top-[-100%] left-[60%] w-[1px] h-[300%] bg-white/10 rotate-[15deg] blur-[1px]"
-                      style={{ animation: "lightning-streak 6s linear infinite 1s" }}
-                    />
-                    <div 
-                      className="absolute top-[-100%] left-[80%] w-[2px] h-[300%] bg-white/20 rotate-[30deg] blur-[2px]"
-                      style={{ animation: "lightning-streak 5s linear infinite 2.5s" }}
-                    />
-                  </div>
-
-                  {/* Intense Lightning Flashes */}
-                  <div 
-                    className="absolute inset-0 opacity-0 bg-white/10"
-                    style={{ animation: "lightning-flash 4s ease-in-out infinite" }}
-                  />
-                  
-                  {/* Golden Aura Pulse */}
-                  <div 
-                    className="absolute inset-0 border-2 border-yellow-500/30 rounded-2xl"
-                    style={{ animation: "aura-pulse 3s ease-in-out infinite" }}
-                  />
-                </div>
-              )}
+              {plan.highlight && <LightningEffect />}
 
               {/* Badge */}
               {plan.badge && (
-                <div className="absolute top-5 right-5">
+                <div className="absolute top-5 right-5 z-20">
                   <span
                     className={`font-cinzel text-[10px] tracking-widest uppercase px-3 py-1 rounded-full ${
                       plan.highlight
@@ -201,12 +169,12 @@ export default function Pricing() {
                   {plan.description}
                 </p>
 
-                <div className="h-px bg-white/5 mb-6" />
+                <div className="h-px bg-white/5 mb-6 w-full" />
 
                 {/* Features */}
-                <ul className="flex flex-col gap-3 flex-1">
+                <ul className="flex flex-col gap-3 flex-1 w-full">
                   {plan.features.map((f) => (
-                    <li key={f} className="flex items-start gap-3">
+                    <li key={f} className="flex items-start gap-3 text-left">
                       <Check
                         className={`w-4 h-4 mt-0.5 shrink-0 ${
                           plan.highlight ? "text-yellow-400" : "text-white/50"
@@ -216,7 +184,7 @@ export default function Pricing() {
                     </li>
                   ))}
                   {plan.missing.map((f) => (
-                    <li key={f} className="flex items-start gap-3 opacity-30">
+                    <li key={f} className="flex items-start gap-3 opacity-30 text-left">
                       <div className="w-4 h-4 mt-0.5 shrink-0 flex items-center justify-center">
                         <div className="w-3 h-px bg-white/40" />
                       </div>
@@ -232,7 +200,7 @@ export default function Pricing() {
                   href="https://wa.me/522202757573?text=Hola,%20quiero%20el%20plan%20Zeus%20en%20Zeuz%20Gym"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`mt-8 flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-cinzel text-sm tracking-widest uppercase transition-all duration-300 hover:scale-105 ${plan.ctaClass}`}
+                  className={`w-full mt-8 flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-cinzel text-sm tracking-widest uppercase transition-all duration-300 hover:scale-105 ${plan.ctaClass}`}
                 >
                   {plan.highlight && <Zap className="w-4 h-4 fill-black" />}
                   {plan.cta}
@@ -256,27 +224,6 @@ export default function Pricing() {
       </div>
 
       <div className="absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-yellow-500/30 to-transparent" />
-      <style jsx>{`
-        @keyframes spin {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
-        }
-        @keyframes lightning-flash {
-          0%, 92%, 100% { opacity: 0; }
-          93%, 97% { opacity: 1; }
-          95%, 99% { opacity: 0.5; }
-        }
-        @keyframes aura-pulse {
-          0%, 100% { opacity: 0.2; transform: scale(1); }
-          50% { opacity: 0.5; transform: scale(1.02); }
-        }
-        @keyframes lightning-streak {
-          0% { transform: translateY(0) rotate(25deg); opacity: 0; }
-          5% { opacity: 1; }
-          10% { opacity: 0; transform: translateY(100%) rotate(25deg); }
-          100% { opacity: 0; transform: translateY(100%) rotate(25deg); }
-        }
-      `}</style>
     </section>
   );
 }

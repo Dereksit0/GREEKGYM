@@ -6,25 +6,25 @@ import { MapPin, Navigation, Clock, Phone } from "lucide-react";
 const branches = [
   {
     id: 1,
-    name: "Sucursal Centro",
-    address: "C. 4 Sur 714, Centro Histórico, Puebla, Pue.",
-    mapsQuery: "C.+4+Sur+714,+Centro+Histórico,+Puebla,+México",
+    name: "GREEK GYM",
+    address: "C. 55 Nte. 2806, Ampliación Francisco I. Madero, Aquiles Serdán, 72140 Heroica Puebla de Zaragoza, Pue.",
+    mapsQuery: "GREEK+GYM+Puebla",
     mapEmbed:
-      "https://maps.google.com/maps?q=C.+4+Sur+714,+Puebla,+Mexico&output=embed",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15083.906497184496!2d-98.243361!3d19.0647284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc76e42722e25%3A0x5c43bca67cea5397!2sGREEK%20GYM!5e0!3m2!1ses-419!2smx!4v1714690320000!5m2!1ses-419!2smx",
     hours: "Lun — Vie: 05:30 — 22:00 | Sáb: 07:00 — 18:00 | Dom: 08:00 — 14:00",
     phone: "220 275 7573",
-    features: ["Estacionamiento", "Regaderas", "Cafetería", "Tienda"],
+    features: ["Estacionamiento amplio", "Regaderas", "Área CrossFit", "Ring de box"],
   },
   {
     id: 2,
-    name: "Sucursal Norte",
-    address: "C. 55 Nte. 2806, Col. Guadalupe, Puebla, Pue.",
-    mapsQuery: "C.+55+Nte.+2806,+Puebla,+México",
+    name: "ZEUS Greek Gym",
+    address: "C. 4 Sur 714, Libertad, 72130 Heroica Puebla de Zaragoza, Pue.",
+    mapsQuery: "ZEUS+Greek+Gym+Puebla",
     mapEmbed:
-      "https://maps.google.com/maps?q=C.+55+Nte.+2806,+Puebla,+Mexico&output=embed",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.5!2d-98.23!3d19.06!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc7006077cb75%3A0x8cb3a7eee2ff84d4!2sZEUS%20Greek%20Gym!5e0!3m2!1ses-419!2smx!4v1714690320000!5m2!1ses-419!2smx",
     hours: "Lun — Vie: 06:00 — 22:00 | Sáb: 07:00 — 18:00 | Dom: 08:00 — 14:00",
     phone: "220 275 7573",
-    features: ["Estacionamiento amplio", "Regaderas", "Área CrossFit", "Ring de box"],
+    features: ["Estacionamiento", "Regaderas", "Cafetería", "Tienda"],
   },
 ];
 

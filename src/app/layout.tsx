@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "GREEK GYM ZEUS — Forja Tu Cuerpo Legendario",
   description:
     "El gimnasio más épico de Puebla. Halterofilia, Cross-Gods, Yoga del Olimpo. Conviértete en dios.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
