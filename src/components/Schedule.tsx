@@ -141,10 +141,10 @@ export default function Schedule() {
                         key={j} 
                         className="group relative p-4 rounded-xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.05] transition-all duration-300"
                       >
-                        <p className="text-[10px] text-white/40 font-inter mb-2 uppercase tracking-tighter text-center sm:text-left">
+                        <p className="text-xs text-white/40 font-inter mb-2 uppercase tracking-tighter text-center sm:text-left">
                           {cls.time}
                         </p>
-                        <p className="font-cinzel text-xs font-black tracking-wider text-white group-hover:text-yellow-400 transition-colors text-center sm:text-left">
+                        <p className="font-cinzel text-sm sm:text-base font-black tracking-wider text-white group-hover:text-yellow-400 transition-colors text-center sm:text-left">
                           {cls.name}
                         </p>
                         

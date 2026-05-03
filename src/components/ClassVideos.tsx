@@ -82,7 +82,7 @@ export default function ClassVideos() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(201,168,76,0.05),transparent)]" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
+        <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-16 gap-6">
           <div className="max-w-xl text-left">
             <p className="font-cinzel text-xs tracking-[0.4em] text-yellow-400 uppercase mb-4">Experiencia Zeuz</p>
             <h2 className="font-cinzel font-black text-4xl sm:text-5xl text-white leading-tight uppercase">

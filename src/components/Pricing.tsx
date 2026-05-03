@@ -6,68 +6,83 @@ import LightningEffect from "./LightningEffect";
 
 const plans = [
   {
-    name: "Mortal",
-    subtitle: "Comienza tu camino",
-    price: "499",
+    name: "Mensualidad",
+    subtitle: "Esencia del Guerrero",
+    price: "450",
     period: "/ mes",
-    description: "Para quienes dan sus primeros pasos hacia la grandeza.",
+    description: "Acceso total a nuestras instalaciones para tu transformación individual.",
     features: [
       "Acceso a sala de pesas",
-      "1 clase grupal por semana",
+      "Clases grupales incluidas",
       "Vestuarios y lockers",
       "App Greek Gym",
     ],
-    missing: ["Clases ilimitadas", "Nutrición", "Acceso 24/7", "Coach personal"],
-    cta: "Empieza como Mortal",
+    missing: ["Nutrición personalizada", "Acceso 24/7", "Coach personal"],
+    cta: "Empieza Hoy",
     highlight: false,
     badge: null,
     borderClass: "border-white/10 hover:border-white/20",
     ctaClass: "bg-white/5 hover:bg-white/10 text-white border border-white/10",
   },
   {
-    name: "Héroe",
-    subtitle: "El sendero del guerrero",
-    price: "799",
+    name: "Paquete Pareja",
+    subtitle: "Dúo del Olimpo",
+    price: "800",
     period: "/ mes",
-    description: "Para quienes ya decidieron convertirse en algo más.",
+    description: "Entrena con tu aliado y conquisten juntos la cima del Olimpo.",
     features: [
+      "Acceso para 2 personas",
       "Acceso a sala de pesas",
       "Clases grupales ilimitadas",
       "Vestuarios y lockers",
       "App Greek Gym",
-      "Plan nutricional básico",
-      "Acceso a las 2 sucursales",
     ],
     missing: ["Acceso 24/7", "Coach personal"],
-    cta: "Ascender a Héroe",
+    cta: "Entrenar en Pareja",
     highlight: false,
     badge: "Popular",
     borderClass: "border-white/20 hover:border-white/30",
     ctaClass: "bg-white/10 hover:bg-white/20 text-white border border-white/20",
   },
   {
-    name: "Dios",
-    subtitle: "La cima del Olimpo",
-    price: "1,299",
+    name: "Paquete Family",
+    subtitle: "Legión de Titanes",
+    price: "1,600",
     period: "/ mes",
-    description: "Poder absoluto. Sin límites. Sin excusas. Solo resultados divinos.",
+    description: "Poder absoluto para tu familia. Hasta 4 integrantes en un mismo plan.",
     features: [
+      "Acceso para 4 personas",
       "Acceso ilimitado a todo",
       "Clases grupales ilimitadas",
-      "Acceso 24/7 las 2 sucursales",
-      "Coach personal (4 sesiones/mes)",
-      "Plan nutricional premium",
-      "Masaje de recuperación mensual",
-      "Merch exclusivo Greek Gym",
+      "Coach personal (2 sesiones/mes)",
       "Comunidad VIP del Olimpo",
     ],
     missing: [],
-    cta: "ASCENDER AL OLIMPO",
+    cta: "UNIR A LA FAMILIA",
     highlight: true,
-    badge: "El mejor valor",
+    badge: "Mejor Valor",
     borderClass: "border-yellow-500/50",
     ctaClass:
       "bg-yellow-500 hover:bg-yellow-400 text-black font-black shadow-lg shadow-yellow-500/40 hover:shadow-yellow-400/60",
+  },
+  {
+    name: "Jumping/Spinning",
+    subtitle: "Energía de Hermes",
+    price: "35",
+    period: "/ clase",
+    description: "Clases dinámicas de alta intensidad para quemar grasa y ganar resistencia.",
+    features: [
+      "Acceso a 1 clase",
+      "Equipo incluido",
+      "Instructor certificado",
+      "Ambiente motivador",
+    ],
+    missing: ["Acceso a pesas", "App Greek Gym"],
+    cta: "Reservar Clase",
+    highlight: false,
+    badge: "Nuevo",
+    borderClass: "border-white/10 hover:border-white/20",
+    ctaClass: "bg-white/5 hover:bg-white/10 text-white border border-white/10",
   },
 ];
 
@@ -103,7 +118,7 @@ export default function Pricing() {
         </motion.div>
 
         {/* Plans */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
           {plans.map((plan, i) => (
             <motion.div
               key={plan.name}
@@ -218,7 +233,7 @@ export default function Pricing() {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="text-center font-inter text-xs text-white/20 mt-10 tracking-wider"
         >
-          Todos los precios en pesos mexicanos. Inscripción única $300 MXN.
+          Todos los precios en pesos mexicanos. Inscripción única $50 MXN.
           Primer mes sin compromiso de permanencia.
         </motion.p>
       </div>

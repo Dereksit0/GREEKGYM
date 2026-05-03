@@ -59,6 +59,14 @@ const Bolt = ({ delay = 0, color = "#fff" }) => {
 };
 
 export default function LightningEffect() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden rounded-2xl">
       {/* Heavenly Aura */}

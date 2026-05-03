@@ -60,6 +60,28 @@ const classes = [
     border: "border-purple-500/20 hover:border-purple-500/60",
   },
   {
+    icon: Flame,
+    name: "Templo de Jumping",
+    subtitle: "Vuelo de Hermes",
+    schedule: "Cardio · Coordinación · Resistencia",
+    description:
+      "Desafía la gravedad y quema calorías al máximo en nuestras clases de mini-trampolín. Diversión y resultados en cada salto.",
+    color: "from-pink-900/20 to-transparent",
+    accent: "text-pink-400",
+    border: "border-pink-500/20 hover:border-pink-500/60",
+  },
+  {
+    icon: Flame,
+    name: "Templo de Spinning",
+    subtitle: "Carrera de Carros",
+    schedule: "Resistencia · Potencia · Pierna",
+    description:
+      "Pedalea hacia la gloria en sesiones de alta intensidad. Quema grasa y fortalece tu tren inferior con el mejor ritmo.",
+    color: "from-cyan-900/20 to-transparent",
+    accent: "text-cyan-400",
+    border: "border-cyan-500/20 hover:border-cyan-500/60",
+  },
+  {
     icon: Leaf,
     name: "Santuario de Core",
     subtitle: "Centro del Poder",

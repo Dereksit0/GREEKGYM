@@ -144,7 +144,7 @@ export default function Hero() {
             Inicia tu transformación
           </a>
           <a
-            href="#classes"
+            href="#class-videos"
             className="inline-flex items-center gap-2 px-8 py-4 border border-white/20 hover:border-yellow-500/50 text-white/70 hover:text-yellow-400 font-cinzel text-sm tracking-[0.2em] uppercase rounded transition-all duration-300 backdrop-blur-sm"
           >
             Ver clases
